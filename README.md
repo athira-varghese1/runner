@@ -12,8 +12,8 @@ The job runner is a Go program that can execute predefined jobs step by step. It
 - Navigate to the directory where the main.go file is located.
 
 ## Usage
-1. Define your jobs in the main.go file by updating the Job struct with the necessary fields such as ID, Step1URL, Step2URL, etc. Each job represents a sequence of steps to be executed.
-2. Modify the jobRunner() function in the main.go file to include the logic for your specific job processing. For example, sending HTTP requests, waiting for responses, and handling errors.
+1. Defined jobs in the main.go file by updating the Job struct with the necessary fields such as ID, Step1URL, Step2URL, etc. Each job represents a sequence of steps to be executed.
+2. Modified jobRunner() function in the main.go file to include the logic for specific job processing. For example, sending HTTP requests, waiting for responses, and handling errors.
 3. Run the main.go file using the go run command:
    `go run main.go`
 4. The job runner will start processing jobs from the jobQueue channel and execute them step by step according to the defined logic.
